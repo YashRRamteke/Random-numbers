@@ -1,7 +1,3 @@
-# Loads the uni.dat file and plots the empirical CDF of the uniform random variable in [0,1]
-
-# Name: Ankit Saha
-# Roll number: AI21BTECH11004
 
 import numpy as np
 import matplotlib.pyplot as plt
