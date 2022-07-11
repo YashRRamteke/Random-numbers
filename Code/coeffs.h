@@ -479,3 +479,19 @@ void proberr_graph(char* str){
   fclose(fp2);
   return;
 }
+
+//Defining the function for generating V distribution random numbers
+void V_dist(char *str, int len) {
+int i;
+double term;
+FILE *fp;
+
+fp = fopen(str,"w");
+//Generate numbers
+for (i = 0; i < len; i++)
+{
+term = (-2)* log(1-(double)rand()/RAND_MAX);
+fprintf(fp,"%lf\n",term);
+}
+fclose(fp);
+}
